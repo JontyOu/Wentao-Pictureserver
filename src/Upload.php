@@ -33,7 +33,6 @@ class Upload
         $post_data['sign'] = $this->getSign($post_data);
         $post_data['file'] = $file;
         $result            = $this->postData($this->url, $post_data);
-        var_dump($result);
         return $result;
     }
 
